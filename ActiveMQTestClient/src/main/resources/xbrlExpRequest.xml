@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<message xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.lombardrisk.com/message/">
+	<header>
+		<messageId>abc1234567</messageId>
+		<senderSystemId>TOOLSETv4</senderSystemId>
+		<receiverServiceName>ocelot-exp-imp</receiverServiceName>
+		<correlationId>def1234567</correlationId>
+	</header>
+	<body>
+		<formInstanceExportRequest>
+			<exportType>XBRL</exportType>
+			<exportSubType>ECR</exportSubType>
+			<productConfiguration>
+				<productCode>ECR</productCode>
+				<productVersion>1</productVersion>
+			</productConfiguration>
+			<exportParameters>
+				<xbrlExportParameters>
+					<moduleCode>COREP_Con</moduleCode>
+					<currency>GBP</currency>
+					<excludeZeroValueFacts>false</excludeZeroValueFacts>
+					<explicitDataPointValues>
+						<explicitDataPointValue dataPointId="37969">
+							<metricMemberId>3974</metricMemberId>
+						</explicitDataPointValue>
+						<explicitDataPointValue dataPointId="31870">
+							<metricMemberId>4007</metricMemberId>
+						</explicitDataPointValue>
+					</explicitDataPointValues>
+					<ecrExportParameters>
+						<filingIndicators>
+							<filingIndicator>C_26.00</filingIndicator>
+   <filingIndicator>C_27.00</filingIndicator>	
+   <filingIndicator>C_28.00</filingIndicator>   
+   <filingIndicator>C_29.00</filingIndicator>
+   <filingIndicator>C_30.00</filingIndicator>
+   <filingIndicator>C_31.00</filingIndicator>
+						</filingIndicators>
+					</ecrExportParameters>
+				</xbrlExportParameters>
+			</exportParameters>
+			<formInstanceIds>
+				<toolsetFormInstanceId>
+					<returnId>360136</returnId>
+					<entityId>2</entityId>
+					<processDate>2013-12-02</processDate>
+				</toolsetFormInstanceId>
+				</formInstanceIds>
+			<exportDestination>
+				<file>
+					<filename>c:/xbrl/ecr.xbrl</filename>
+					<compressOutput>NONE</compressOutput>
+				</file>
+			</exportDestination>
+		</formInstanceExportRequest>
+	</body>
+</message>
